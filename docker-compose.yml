@@ -1,0 +1,10 @@
+services:
+  application:
+    build:
+      context: .
+    ports:
+      - 8000:5000
+    volumes:
+      - ./core:/core
+    env_file:
+      - .env
